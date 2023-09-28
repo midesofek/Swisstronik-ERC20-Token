@@ -1,0 +1,29 @@
+{
+  "name": "swisstronik-erc20-mintable-token",
+  "version": "1.0.0",
+  "description": "This repository contains code that mints ERC20 tokens using the SwisstronikJS library for contract interaction.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.js --network swisstronik ",
+    "mint": "npx hardhat run scripts/mintAndTransferTokens.js --network swisstronik"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midesofek/Swisstronik-ERC20-Mintable-Token.git"
+  },
+  "author": "Mide Sofek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midesofek/Swisstronik-ERC20-Mintable-Token/issues"
+  },
+  "homepage": "https://github.com/midesofek/Swisstronik-ERC20-Mintable-Token#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.17.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@swisstronik/swisstronik.js": "^1.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
